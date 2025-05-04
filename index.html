@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> JavaScript Event Assignment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <!--Event handling button-->
+
+    <h1>  JavaScript Event Handling & Interactive Elements</h1>
+    
+  <button id="eventBtn">Click Me </button>
+  <p id="message"></p>
+
+
+  <!--Change text button -->
+   
+  <button id="changeBtn">Click Me</button><br><br>
+
+  <!--Slide show  image-->
+
+  <h2>Slideshow images</h2><br><br>
+
+  <div id="slideshow">
+    <img id="slideImg" src="./images/laptop.jpg" alt="Slideshow Image" width="400" height="300">
+  </div>
+
+<!--Tab content starts here-->
+
+<h1>Capital cities in South Africa</h1>
+<div class="tabs">
+    <div class="tab active" data-tab="1">Pretoria</div>
+    <div class="tab" data-tab="2">Cape Town</div>
+    <div class="tab" data-tab="3">Bloemfotein</div>
+  </div>
+  <div id="tab-1" class="tab-content active">This is content for Tab 1 </div>
+  <div id="tab-2" class="tab-content">Here's content for Tab 2 </div>
+  <div id="tab-3" class="tab-content">And this is Tab 3 content </div><br> <br>
+
+  
+
+  <!--Form validation-->
+  <H2>Sign up</H2>
+
+  <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" required>
+    <small id="name-feedback"></small><br><br>
+  
+    <label for="email">Email:</label>
+    <input type="email" id="email" required>
+    <small id="email-feedback"></small><br><br>
+  
+    <label for="password">Password:</label>
+    <input type="password" id="password" required>
+    <small id="password-feedback"></small><br><br>
+  
+    <button type="submit">Submit</button>
+  </form>
+<br><br>
+
+
+ <script src="script.js">
+
+ </script>
+</body>
+</html>
