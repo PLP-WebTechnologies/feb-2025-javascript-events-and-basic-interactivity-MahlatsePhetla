@@ -1,0 +1,90 @@
+
+#eventBtn {
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  #eventBtn:hover {
+    background-color: green;
+  }
+
+
+  */* Interactive Element styling starts here */*
+  body {
+    font-family: sans-serif;
+    text-align: center;
+    padding: 2em;
+    background: #f4f4f4;
+  }
+
+  
+
+    #changeBtn {
+        padding: 12px 24px;
+        background-color: blue;
+        color: white;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      #changeBtn.changed {
+        background-color:lightgreen;
+        color: white;
+      }
+
+
+     #slideshow {
+      width: 300px;
+      
+      position: relative;
+    }
+
+    #slideshow image {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        transition: opacity 0.5s ease-in-out;
+      }
+
+      */* Tabs styling */*
+
+      .tabs {
+        display: flex;
+        justify-content: center;
+        margin-top: 2em;
+      }
+
+      .tab {
+        padding: 10px 20px;
+        background: #ccc;
+        margin: 0 5px;
+        cursor: pointer;
+        transition: background 0.3s;
+        width: 300px;
+      }
+
+      .tab.active {
+        background: #007BFF;
+        color: white;
+      }
+
+      .tab-content {
+        display: none;
+        padding: 1em;
+        background: white;
+        margin-top: 1em;
+        border-radius: 8px;
+        animation: fadeIn 0.5s;
+      }
+
+      .tab-content.active {
+        display: block;
+      }
+
+      @keyframes fadeIn {
+        from {opacity: 0;}
+        to {opacity: 1;}
+      }
